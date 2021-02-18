@@ -219,6 +219,7 @@ var AppModule = /** @class */ (function () {
                 _components_topselling_topselling_component__WEBPACK_IMPORTED_MODULE_9__["TopsellingComponent"],
                 _components_products_products_component__WEBPACK_IMPORTED_MODULE_10__["ProductsComponent"],
                 _components_products_products_component__WEBPACK_IMPORTED_MODULE_10__["DialogDataExampleDialog"],
+                _components_collections_collections_component__WEBPACK_IMPORTED_MODULE_17__["DialogDataExample"],
                 _components_gold_schemes_gold_schemes_component__WEBPACK_IMPORTED_MODULE_13__["GoldSchemesComponent"],
                 _components_contactus_contactus_component__WEBPACK_IMPORTED_MODULE_15__["ContactusComponent"],
                 _components_aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_16__["AboutusComponent"],
@@ -233,7 +234,7 @@ var AppModule = /** @class */ (function () {
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-            entryComponents: [_components_products_products_component__WEBPACK_IMPORTED_MODULE_10__["DialogDataExampleDialog"]]
+            entryComponents: [_components_products_products_component__WEBPACK_IMPORTED_MODULE_10__["DialogDataExampleDialog"], _components_collections_collections_component__WEBPACK_IMPORTED_MODULE_17__["DialogDataExample"]]
         })
     ], AppModule);
     return AppModule;
@@ -337,13 +338,13 @@ module.exports = ".productwrapper {\n  position: relative; }\n\n.productbody {\n
 /*!*****************************************************************!*\
   !*** ./src/app/components/collections/collections.component.ts ***!
   \*****************************************************************/
-/*! exports provided: CollectionsComponent, DialogDataExampleDialog */
+/*! exports provided: CollectionsComponent, DialogDataExample */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CollectionsComponent", function() { return CollectionsComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogDataExampleDialog", function() { return DialogDataExampleDialog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogDataExample", function() { return DialogDataExample; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
@@ -386,7 +387,7 @@ var CollectionsComponent = /** @class */ (function () {
     }
     CollectionsComponent.prototype.openDialog = function (item) {
         console.log(item.imgsrc);
-        this.dialog.open(DialogDataExampleDialog, {
+        this.dialog.open(DialogDataExample, {
             data: {
                 url: item.imgsrc,
                 name: item.name,
@@ -473,29 +474,29 @@ var CollectionsComponent = /** @class */ (function () {
     return CollectionsComponent;
 }());
 
-var DialogDataExampleDialog = /** @class */ (function () {
-    function DialogDataExampleDialog(data) {
+var DialogDataExample = /** @class */ (function () {
+    function DialogDataExample(data) {
         this.data = data;
     }
-    DialogDataExampleDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    DialogDataExample = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'dialog-data-example-dialog',
-            template: __webpack_require__(/*! ./dialog-data-example-dialog.html */ "./src/app/components/collections/dialog-data-example-dialog.html"),
+            template: __webpack_require__(/*! ./dialog-data-example.html */ "./src/app/components/collections/dialog-data-example.html"),
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MAT_DIALOG_DATA"])),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Object])
-    ], DialogDataExampleDialog);
-    return DialogDataExampleDialog;
+    ], DialogDataExample);
+    return DialogDataExample;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/components/collections/dialog-data-example-dialog.html":
-/*!************************************************************************!*\
-  !*** ./src/app/components/collections/dialog-data-example-dialog.html ***!
-  \************************************************************************/
+/***/ "./src/app/components/collections/dialog-data-example.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/collections/dialog-data-example.html ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
